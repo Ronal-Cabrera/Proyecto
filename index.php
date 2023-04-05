@@ -22,10 +22,7 @@
     <button type="submit"  class="boton" name="Ingresar"> Ingresar </button>   <br>
   </form>
     <a href="registrar.php"><input type="submit" class="boton" value="Registrar"><br></a>
-    <div class="enlace">
-  <?php require ('autentificacion.php')?>
-    <a href="<?php echo $client->createAuthUrl() ?>" style=" text-decoration: none;">Iniciar sesión con Google</a>
-  </div>
+
   <br>
   <a href="recuperar.php"><h5>Se le olvido la contraseña</h5></a>
   
