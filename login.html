@@ -1,0 +1,64 @@
+<html>
+<style>
+  body{
+    background-image: url("AMOR DOWN.jpeg");
+  }
+    
+input[type=text], select {
+  font-size: x-large;
+  width: 60%;
+  padding: 12px 20px;
+  margin: 0px 0;
+  display: inline-block;
+  border: 1px solid hsl(315, 67%, 1%);
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  font-size: large;
+  width: 60%;
+  background-color: #4707db;
+  color: rgb(253, 252, 252);
+  padding: 14px 20px;
+  margin: 0px 0;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #3c0ac5;
+  border: 1px solid hsl(315, 67%, 1%);
+}
+
+div {
+  font-size: larger;
+  text-align:center;
+  border-radius: 5px;
+  background-image: url("AMOR DOWN..jpeg");
+  padding: 20px;
+}
+.fondo{
+  border: solid;
+  width: 40%;
+  height: auto;
+  margin: auto;
+}
+</style>
+
+<div class="fondo">
+ 
+  <form method="POST" action="usuariosCreYreg.php">
+    <h1><label for="fname">Iniciar Sesion</label></h1>
+
+    <h2><label for="fname">Usuario</label> </h2>
+    <input type="text" id="fname" name="usuario" placeholder="Ingrese su usuario.."> <br><br>
+
+    <h2><label for="lname">Contraseña</label></h2>
+    <input type="text" id="lname" name="contra" placeholder="Ingrese su contraseña.."> <br><br>
+    
+    <h2><input type="submit" value="Aceptar" name="login"></h2>
+  
+  </form>
+</div>

@@ -1,38 +1,83 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="estiloReg.css">
-  <title>Login</title>
-</head>
-<body>
+<html>
+    <style>
+        .orden{
+            margin: 0px 125px 95px auto;
+            display: flex;
+        }
+        .info{
+    margin: 35px 125px 95px auto;
+    width: 100%;
+    font-size:xx-large;
+  width: 35%;
+  padding: 12px 20px; 
+  border-radius: 15px;
+  box-sizing: border-box;
+        }
+        
+        .eleccion{
+            width: 200%;
+        }
+        .imagen{
+            width: 350px;
+            height: 350px;
+            margin: 35px auto 95px 100px;
+        }
+
+        body{
+            background-image: linear-gradient(rgb(0, 60, 255), rgb(0, 140, 255)); 
+        }
+
+        .button5 {
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+  font-size: 16px;
+  width: 25%;
   
-<div class="fondo">
-<h1>Registrar</h1> <br>
-  <form action="verUsuario.php" method="post">
-    <h3>Correo</h3>
-    <input type="gmail" class="texto" name="Correo" placeholder="Ingrese su usuario.."> <br>
+}
 
-    <h3>Usuario</h3>
-    <input type="text" class="texto" name="Usuario" placeholder="Ingrese su usuario.."> <br>
+.button5:hover {
+  background-color: #555555;
+  color: white;
+}
+    </style>
+    
+<body>
+    <div class = "Orden">
+    <div class = "imagen">
+        <img style = "width: 100%; height: 100%;" src="Sinfondo.png" alt="Italian Trulli">
+    </div>
 
-    <h3>Contraseña</h3>
-    <input type="password" class="texto" name="Contra" placeholder="Ingrese una Contraseña.."> <br>
+    <form method="POST" action="usuariosCreYreg.php">
 
-    <h3>Confirmar Contraseña</h3>
-    <input type="password" class="texto" name="Contra0" placeholder="Confirme la Contraseña.."> <br><br><br>
+        <div class = "info">
+        <label for="fname">Usuario</label><br>
+        <input class="uno" name="usuario" placeholder="Nombre" type="text">
 
-    <button type="submit"  class="boton" name="Registrar"> Registrar </button>   <br>
+        <label for="lname">Contraseña</label><br>
+        <input class="uno" name="contra" placeholder="Contraseña" type="text">
+
+        <label for="lname">Nivel del Usuario</label><br>
+
+        <div class = "eleccion">
+            <select name="nivel" id="nivelus" >
+            <option value=""></option>
+            <option value="Nivel 1">Nivel 1</option>
+            <option value="Nivel 2">Nivel 2</option>
+            <option value="Nivel 3">Nivel 3</option>
+            </select>
+            <br><br>
+            <br>
+        </div>
+        <button type="submit" class="button button5" value="Registrar" name="registrar"> Registrar </button>
+        <button class="button button5">Cancelar</button>    
     </form>
+        
 
-    <div class="enlace">
-  <?php require ('autentificacion.php')?>
-    <a href="<?php echo $client->createAuthUrl() ?>" style=" text-decoration: none;">Iniciar sesión con Google</a>
-  </div>
+
 </div>
-
-<script src="validar.js"></script>
+</div>
 
 </body>
 </html>
+

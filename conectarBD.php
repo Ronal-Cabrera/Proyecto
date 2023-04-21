@@ -3,7 +3,7 @@
     $dbhost = "localhost";
     $dbusu = "root";
     $dbpass = "";
-    $dbname = "bdweb";
+    $dbname = "basedatos";
     
     $conect = mysqli_connect($dbhost,$dbusu,$dbpass,$dbname) or die("error");
     

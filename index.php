@@ -11,21 +11,20 @@
 <div class="fondo">
   
 <h1>Iniciar Session</h1><br>
-  <form action="verUsuario.php" method="POST">
+<form method="POST" action="usuariosCreYreg.php">
 
     <h3>Usuario</h3>
-    <input type="text" class="texto" name="Usuario1" placeholder="Ingrese su usuario.."> <br>
+    <input type="text" class="texto" name="usuario" placeholder="Ingrese su usuario.."> <br>
 
     <h3>Contraseña</h3>
-    <input type="password" class="texto" name="Contra1" placeholder="Ingrese su contraseña.."> <br><br>
+    <input type="password" class="texto" name="contra" placeholder="Ingrese su contraseña.."> <br><br>
 
-    <button type="submit"  class="boton" name="Ingresar"> Ingresar </button>   <br>
+    <button type="submit"  class="boton" name="login"> Ingresar </button>   <br>
   </form>
-    <a href="registrar.php"><input type="submit" class="boton" value="Registrar"><br></a>
+
 
   <br>
-  <a href="recuperar.php"><h5>Se le olvido la contraseña</h5></a>
-  
+
 
 </div>
 </body>
