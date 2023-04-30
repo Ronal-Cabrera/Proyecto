@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+body{
+    margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 20px;
+  border: 1px solid white;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.form{
+    margin: 50px auto 0px auto;
+    display: block;
+    width: 90%;
+    height: 100%;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.824);
+  }
+
+  .titulo{
+    margin:0px 0px 0px 0px;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .texto {
+    width: 100%;
+    padding: 10px 10px;
+    margin: 0px 0px 8px 0px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  .texto2, .nivel{
+    
+    width: 100%;
+    padding: 10px 10px;
+    margin: 0px 0px 8px 0px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  .boton {
+    width: 100%;
+    background-color: #1da1c9;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .boton:hover {
+    background-color: #24bdeb;
+  }
+
+  .botonform{
+    width: auto;
+    padding: 10px;
+    margin: 20px 0px 0px 20px;
+    background-color: white;
+    border-style: none;
+    border-radius: 6px;
+    
+  }
+  
+  .menu{
+    width: 100%;
+    height: 80px;
+    background-color: #1da1c9;
+  }   </style>
+</head>
+<body>
+    <div class="menu">
+        <a href="menu.html"><input class="botonform" type="submit" value="Regresar"></a>
+    </div>
+
+    <div class="form">
+    <form action="/action_page.php">
+
+    <h1 style="text-align: center;">DATOS GENERALES</h1>
+
+    <div class="row">
+        <div class="column" style="background-color:#1da1c9;">
+            <label for="fname">Nombre</label>
+            <input type="text" class="texto" name="firstname" placeholder="">
+        </div>
+        
+        <div class="column" style="background-color:#5db5cf">
+            <label for="lname">Fecha de nacimiento</label>
+            <input type="text" class="texto" name="lastname" placeholder="">
+        </div>
+        
+        <div class="column" style="background-color:#a2d4e0">
+            <label for="fname">Escolaridad</label>
+            <input type="text" class="texto" name="firstname" placeholder="">
+        </div>
+        
+        <div class="column" style="background-color:#bddbe3">
+            <label for="lname">Fecha de ingreso</label>
+            <input type="text" class="texto" name="lastname" placeholder="">
+        </div>
+
+        <div class="column" style="background-color:#1da1c9;">
+            <label for="fname">Dirección</label>
+            <input type="text" class="texto" name="firstname" placeholder="">
+        </div>
+        
+        <div class="column" style="background-color:#5db5cf">
+            <label for="lname">Nombre del encargado</label>
+            <input type="text" class="texto" name="lastname" placeholder="">
+        </div>
+        
+        <div class="column" style="background-color:#a2d4e0">
+            <label for="fname">Nombre de la madre</label>
+            <input type="text" class="texto" name="firstname" placeholder="">
+        </div>
+        
+        <div class="column" style="background-color:#bddbe3">
+            <label for="lname">Edad</label>
+            <input type="text" class="texto" name="lastname" placeholder="">
+        </div>
+
+        <div class="column" style="background-color:#1da1c9;">
+            <label for="fname">Escolaridad</label>
+            <input type="text" class="texto" name="firstname" placeholder="">
+        </div>
+        
+        <div class="column" style="background-color:#5db5cf">
+            <label for="lname">Ocupación</label>
+            <input type="text" class="texto" name="lastname" placeholder="">
+        </div>
+        
+        <div class="column" style="background-color:#a2d4e0">
+            <label for="fname">Telefono</label>
+            <input type="text" class="texto" name="firstname" placeholder="">
+        </div>
+        
+        <div class="column" style="background-color:#bddbe3">
+            <label for="lname">Nombre del padre</label>
+            <input type="text" class="texto" name="lastname" placeholder="">
+        </div>
+
+        <div class="column" style="background-color:#1da1c9;">
+            <label for="fname">Edad</label>
+            <input type="text" class="texto" name="firstname" placeholder="">
+        </div>
+        
+        <div class="column" style="background-color:#5db5cf">
+            <label for="lname">Escolaridad</label>
+            <input type="text" class="texto" name="lastname" placeholder="">
+        </div>
+        
+        <div class="column" style="background-color:#a2d4e0">
+            <label for="fname">Ocupación</label>
+            <input type="text" class="texto" name="firstname" placeholder="">
+        </div>
+        
+        <div class="column" style="background-color:#bddbe3">
+            <label for="lname">Telefono</label>
+            <input type="text" class="texto" name="lastname" placeholder="">
+        </div>
+
+        <div class="column" style="background-color:#1da1c9;">
+            <label for="fname">Escolaridad</label>
+            <input type="text" class="texto" name="firstname" placeholder="">
+        </div>
+        
+        <div class="column" style="background-color:#5db5cf">
+            <label for="lname">No. hermanos</label>
+            <input type="text" class="texto" name="lastname" placeholder="">
+        </div>
+        
+        <div class="column" style="background-color:#a2d4e0">
+            <label for="fname">Lugar que ocupa</label>
+            <input type="text" class="texto" name="firstname" placeholder="">
+        </div>
+        
+        <div class="column" style="background-color:#bddbe3">
+            <label for="lname">Motivo de consulta</label>
+            <input type="text" class="texto" name="lastname" placeholder="">
+        </div>
+      </div>
+      <br><br>
+      <h1 style="text-align: center;">HISTORIAL CLÍNICO</h1>
+
+    <div class="row">
+        <div class="column" style="background-color:#1da1c9;">
+            <label for="fname">Enfermedades que padece</label>
+            <input type="text" class="texto" name="firstname" placeholder="">
+        </div>
+        
+        <div class="column" style="background-color:#5db5cf">
+            <label for="lname">Medicamentos que toma</label>
+            <input type="text" class="texto" name="lastname" placeholder="">
+        </div>
+        
+        <div class="column" style="background-color:#a2d4e0">
+            <label for="fname">Tiene esquena completo de vacunas</label>
+            <input type="text" class="texto" name="firstname" placeholder="">
+        </div>
+        
+        <div class="column" style="background-color:#bddbe3">
+            <label for="lname">Le han realizado pruebas auditivas</label>
+            <input type="text" class="texto" name="lastname" placeholder="">
+        </div>
+
+        <div class="column" style="background-color:#1da1c9;">
+            <label for="fname">Oftalmológicas</label>
+            <input type="text" class="texto" name="firstname" placeholder="">
+        </div>
+        
+        <div class="column" style="background-color:#5db5cf">
+            <label for="lname">Usa aparatos auditivos</label>
+            <input type="text" class="texto" name="lastname" placeholder="">
+        </div>
+        
+        <div class="column" style="background-color:#a2d4e0">
+            <label for="fname">Otras</label>
+            <input type="text" class="texto" name="firstname" placeholder="">
+        </div>
+        
+        <div class="column" style="background-color:#bddbe3">
+            <label for="lname">Cirugias</label>
+            <input type="text" class="texto" name="lastname" placeholder="">
+        </div>
+    </div>
+        <br><br>
+      <h1 style="text-align: center;">ANTECEDENTES PRE-NATALES</h1>
+      <h3 style="text-align: center;">Coniciones del embarazo</h3>
+    <div class="row">
+        <div class="column" style="background-color:#1da1c9;">
+            <label for="fname">Fue un embarazo de termino</label>
+            <input type="text" class="texto" name="firstname" placeholder="">
+        </div>
+        
+        <div class="column" style="background-color:#5db5cf">
+            <label for="lname">Explique</label>
+            <input type="text" class="texto" name="lastname" placeholder="">
+        </div>
+        
+        <div class="column" style="background-color:#a2d4e0">
+            <label for="fname">Fue parto normal</label>
+            <input type="text" class="texto" name="firstname" placeholder="">
+        </div>
+        
+        <div class="column" style="background-color:#bddbe3">
+            <label for="lname">Explique</label>
+            <input type="text" class="texto" name="lastname" placeholder="">
+        </div>
+
+        <div class="column" style="background-color:#1da1c9;">
+            <label for="fname">Complicacions durante el embarazo</label>
+            <input type="text" class="texto" name="firstname" placeholder="">
+        </div>
+    </div>
+
+        <br><br>
+        <h1 style="text-align: center;">ANTECEDENTES PERI-NATALES</h1>
+        <h3 style="text-align: center;">Durante el parto</h3>
+      <div class="row">
+          <div class="column" style="background-color:#1da1c9;">
+              <label for="fname">El niño lloro inmediatamente</label>
+              <input type="text" class="texto" name="firstname" placeholder="">
+          </div>
+          
+          <div class="column" style="background-color:#5db5cf">
+              <label for="lname">Su coloración fue normal</label>
+              <input type="text" class="texto" name="lastname" placeholder="">
+          </div>
+          
+          <div class="column" style="background-color:#a2d4e0">
+              <label for="fname">Estuvo en incubadora</label>
+              <input type="text" class="texto" name="firstname" placeholder="">
+          </div>
+          
+          <div class="column" style="background-color:#bddbe3">
+              <label for="lname">Cuanto tiempo</label>
+              <input type="text" class="texto" name="lastname" placeholder="">
+          </div>
+  
+          <div class="column" style="background-color:#1da1c9;">
+              <label for="fname">Nació amarillo o morado</label>
+              <input type="text" class="texto" name="firstname" placeholder="">
+          </div>
+        </div>
+          <br><br>
+          <h1 style="text-align: center;">ANTECEDENTES POST-NATALES</h1>
+          <h3 style="text-align: center;">Después del parto</h3>
+        <div class="row">
+            <div class="column" style="background-color:#1da1c9;">
+                <label for="fname">Trataminto despues del parto</label>
+                <input type="text" class="texto" name="firstname" placeholder="">
+            </div>
+            
+            <div class="column" style="background-color:#5db5cf">
+                <label for="lname">Infecciones</label>
+                <input type="text" class="texto" name="lastname" placeholder="">
+            </div>
+            
+            <div class="column" style="background-color:#a2d4e0">
+                <label for="fname">Fiebres</label>
+                <input type="text" class="texto" name="firstname" placeholder="">
+            </div>
+            
+            <div class="column" style="background-color:#bddbe3">
+                <label for="lname">Convulciones</label>
+                <input type="text" class="texto" name="lastname" placeholder="">
+            </div>
+    
+            <div class="column" style="background-color:#1da1c9;">
+                <label for="fname">Tiene lenguaje</label>
+                <input type="text" class="texto" name="firstname" placeholder="">
+            </div>
+
+            <div class="column" style="background-color:#1da1c9;">
+                <label for="fname">Camina</label>
+                <input type="text" class="texto" name="firstname" placeholder="">
+            </div>
+
+      </div>
+      <br>
+              <input class="boton" type="submit" value="Guardar">
+            </form>
+            
+            <a href="actualizarDatos.html"><input class="botonform" type="submit" value="Actualizar"></a>
+          </div>
+</body>
+</html>
