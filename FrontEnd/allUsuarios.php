@@ -54,6 +54,8 @@ WHERE N.cod_nivel IN ('3') ");
 <body>
 
 <div class="arriba">
+<a href="menu.html"> <button class="btn">Regresar</button></a>
+<a href="registrar.html"> <button class="btn">Crear usuario</button></a>
 
 </div>
 
@@ -78,7 +80,7 @@ WHERE N.cod_nivel IN ('3') ");
           <td><?php echo $row['estado'];?></td>
           <td><?php echo $row['nombre'];?></td>
           <td><?php echo $row['NR'];?></td>
-          <td><form action='allUsuarios.php' method='POST'>
+          <td><form action='permisos.php' method='POST'>
             <input type='hidden' name='id' value='<?php echo $row['cod_nivel'];?>'>
             <input type='submit' onclick="changeStyle()" value='Permisos'>
           </form></td>
@@ -91,58 +93,12 @@ WHERE N.cod_nivel IN ('3') ");
         </table>
       </div>
 
-
-
-      <div class="alldiv22" style="overflow-x: auto;">
- 
-        <table id="customers">
-            <tr>
-              <th>Permisos</th>
-              <th></th>
-            </tr>
-            <?php if (isset($_POST['id'])) { 
-              $id = $_POST['id'];
-              include'conectarBD.php';
-              $sql2 = mysqli_query($conect,"SELECT A.descripcion
-              FROM usuario U
-              INNER JOIN usuario_rol UR ON U.cod_usuario = UR.cod_usuario
-              INNER JOIN rol R ON UR.cod_rol = R.cod_rol
-              INNER JOIN rol_actividad RA ON R.cod_rol = RA.cod_rol
-              INNER JOIN actividad A ON RA.cod_actividad = A.cod_actividad
-              WHERE U.cod_usuario IN ('$id')");
-
-              foreach($sql2 as $row) {?>
-              <tr>
-            
-                <td><?php echo $row['descripcion'];?></td>
-                <td><div class="checkDiv"><input type="checkbox" class="check" name="vehicle1" value="Bike"></div></td>
-              
-              </tr>
-              <?php
-                }
-              }
-            ?>
-          
-          </table>
-          <button class="botoncheck">Aceptar</button>
-
-<!--
-    if (isset($_POST['mi_checkbox']) && $_POST['mi_checkbox'] == 'on') {
-    // El checkbox está marcado
-} else {
-    // El checkbox no está marcado
-}
-
--->
-
-        </div>
     </div>  
 </body>
 </html>
 
 <script>
-              function changeStyle() {
-                document.getElementsByClassName("alldiv")[0].style.display = "none";
-            }
-
+  function changeStyle() {
+      document.getElementsByClassName("alldiv")[0].style.display = "none";
+  }
 </script>

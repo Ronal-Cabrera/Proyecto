@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
     <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="./View/Formulario.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,15 +17,15 @@
       font-family: 'El Messiri', sans-serif;
     font-family: 'Poppins', sans-serif;
     }
-    </style>
-    </head>
-   
+
+</style>
 
     </style>
-    </head>
-    <body>
+
 </head>
 <body>
+
+    
     <nav>
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
@@ -34,17 +35,32 @@
             <img src="logoazulsin.png" alt="" class="logo">
         </a>
         <ul>
-            <li><a class="active" href="#">Inicio</a></li>
-            <li><a href="#">Información</a></li>
-            <li><a href="#">Ingresar Datos</a></li>
-            <li><a href="#">Mostrar Datos</a></li>
+            <li><a class="active fas fa-bars" id="check" href="#">Inicio</a></li>
+            <li><a href="#" >Información</a></li>
+            <li><a  href="pedirDatos.html" >Ingresar Datos</a></li>
+            <li><a href="mostrar.php">Mostrar Datos</a></li>
             <li><a href="#">Citas</a></li>
-            <li><a href="#">Más</a></li>
+            <li><a href="allUsuarios.php">Más</a></li>
         </ul>
     </nav>
-    <section></section>
+
+    <section class="section0"></section>
+
+
 </body>
 
 
 </html>
+
+<script>
+    function changeStyle() {
+        document.getElementsByClassName("section0")[0].style.display = "none";
+        document.getElementsByClassName("form")[0].style.display = "block";
+    }
+
+    function change() {
+        document.getElementsByClassName("section0")[0].style.display = "block";
+        document.getElementsByClassName("form")[0].style.display = "none";
+    }
+  </script>
 

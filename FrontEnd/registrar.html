@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./estiloReg.css">
+  <title>Registrar</title>
+</head>
+<body>
+  
+  <div id="id01" class="modal">
+  
+    <form class="modal-content animate" method="POST" action="usuariosCreYreg.php">
+  
+      <div class="container">
+        <label for="uname"><b>usuario</b></label>
+        <input type="text" placeholder="Usuario ..." name="usuario" required>
+  
+        <label for="psw"><b>Contraseña</b></label>
+        <input type="password" placeholder="Contraseña ..." name="contra" required>
+
+        <label for="pw"><b>Nivel del usuario</b></label>
+        <select name="nivel" class="nivel" >
+         <option value=""></option>
+          <option value="Nivel 1">Nivel 1</option>
+          <option value="Nivel 2">Nivel 2</option>
+          <option value="Nivel 3">Nivel 3</option>
+          </select> 
+          
+        <label for="pw"><b>Rol</b></label>
+        <select name="rol" class="nivel" >
+         <option value=""></option>
+          <option value="admin">admin</option>
+          <option value="secretaria">secretaria</option>
+          <option value="usuario Tipo1">usuario Tipo1</option>
+          <option value="usuario Tipo2">usuario Tipo2</option>
+          </select> 
+          <button type="submit" name="registrar">Guardar</button>
+  
+      </div>
+  
+    </form>
+  </div>         
+
+</body>
+</html>
