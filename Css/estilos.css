@@ -65,7 +65,7 @@ li a.active, li a:hover{
 }
 .section0{
     display: block;
-    background: url(NIÑOS.jpg) no-repeat;
+    background: url(../Img/NIÑOS.jpg) no-repeat;
     background-size: cover;
     background-position: center center;
     height: calc(100vh - 80px);

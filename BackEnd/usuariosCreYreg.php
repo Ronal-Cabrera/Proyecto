@@ -66,7 +66,7 @@ if(isset($_POST['login'])){
 
         //$_SESSION['primero'] = $vusuario;
         //$_SESSION['segundo'] = $vcontra;
-        header("Location: menu.html");
+        header("Location: ../FrontEnd/menu.html");
 
     }else if($nr == 0)
     {

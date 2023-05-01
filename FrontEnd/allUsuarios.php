@@ -1,7 +1,7 @@
 <?php
   //conexion a bd
 
-  include'conectarBD.php';
+  include'../BackEnd/conectarBD.php';
 
   $nivel = 1;
 
@@ -43,7 +43,7 @@ WHERE N.cod_nivel IN ('3') ");
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="./View/allUsuarios.css">
+    <link rel="stylesheet" type="text/css" href="../Css/allUsuarios.css">
 
 <style>
 
@@ -54,8 +54,8 @@ WHERE N.cod_nivel IN ('3') ");
 <body>
 
 <div class="arriba">
-<a href="menu.html"> <button class="btn">Regresar</button></a>
-<a href="registrar.html"> <button class="btn">Crear usuario</button></a>
+<a href="../FrontEnd/menu.html"> <button class="btn">Regresar</button></a>
+<a href="../FrontEnd/registrar.html"> <button class="btn">Crear usuario</button></a>
 
 </div>
 

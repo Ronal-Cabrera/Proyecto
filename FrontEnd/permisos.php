@@ -55,7 +55,7 @@
      </tr>
      <?php if (isset($_POST['id'])) { 
        $id = $_POST['id'];
-       include'conectarBD.php';
+       include'../BackEnd/conectarBD.php';
        $sql2 = mysqli_query($conect,"SELECT A.descripcion
        FROM usuario U
        INNER JOIN usuario_rol UR ON U.cod_usuario = UR.cod_usuario

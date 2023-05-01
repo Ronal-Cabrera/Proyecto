@@ -86,7 +86,7 @@ span.psw {
 
 /* Modal Content/Box */
 .modal-content {
-  background: url(registro.png); /* Black w/ opacity */
+  background: url(../Img/registro.png); /* Black w/ opacity */
   background-position: center;
   background-size: cover;
   margin: 3% auto 1% auto; /* 5% from the top, 15% from the bottom and centered */

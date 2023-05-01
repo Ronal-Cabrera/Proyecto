@@ -13,7 +13,7 @@
   font-family: Arial, Helvetica, sans-serif;
   height: 100%;
   margin: 0;
-  background: url(12.png) no-repeat;
+  background: url(./Img/12.png) no-repeat;
   height: 100%;
 
 /* Center and scale the image nicely */
@@ -26,10 +26,10 @@ background-size: cover;
 
 <div id="id01" class="modal">
   
-  <form class="modal-content animate" method="POST" action="usuariosCreYreg.php">
+  <form class="modal-content animate" method="POST" action="./BackEnd/usuariosCreYreg.php">
     <div class="imgcontainer">
       
-      <img src="logoazulsin.png" alt="Avatar" class="avatar">
+      <img src="./Img/logoazulsin.png" alt="Avatar" class="avatar">
     </div>
 
     <div class="container">
